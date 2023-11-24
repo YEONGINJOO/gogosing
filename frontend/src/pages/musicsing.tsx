@@ -260,7 +260,7 @@ const MusicSing: React.FC = () => {
             data: formData,
             headers: {
               'Content-Type': 'multipart/form-data',
-              'accessToken': `Bearer ${localStorage.getItem("AccessToken")}`
+              Authorization: `Bearer ${localStorage.getItem("AccessToken")}`
             },
           })
             .then((res) => {
